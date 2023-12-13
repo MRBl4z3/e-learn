@@ -1,0 +1,16 @@
+.besar{
+  width: 360px;
+}
+
+.gride{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-items: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.containerss{
+  margin: 40px;
+}

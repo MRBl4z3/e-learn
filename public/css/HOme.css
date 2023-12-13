@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Montserrat:wght@500&display=swap');
+*, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* navbar */
+ul {
+    align-items: center;
+    display: flex;
+    background-color: rgb(15, 15, 15);
+    /* gap: 2em; */
+}
+li {
+    /* margin: 0em 2em; */
+    list-style: none;
+}
+li > a {
+    color: gray;
+    text-decoration: none;
+    font-size: 18px;
+}
+.itemNavbar{
+    padding: 3.2vh 1vh;
+    margin: 0vh 2vh;
+}
+.JudulUtama {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1.5px;
+    margin: 0em 1em;
+    padding: 1.5vh;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.S {
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 0.09em;
+    border-radius: 0.12em;
+    background-color: blue;
+}
+.JudulUtama:hover {
+    cursor: default;
+}
+li.searchbar {
+    margin: 0em 2em;
+    margin-left: auto;
+}
+li form {
+    display: flex;
+}
+li .searchMapel {
+    width: 110%;
+    /* height: 150%; */
+    border-radius: 20px;
+    padding: 0.6vh 2vh;
+    outline: none;
+    margin-right: 4vh;   
+    margin-left: -2vh;
+}
+li .cari {
+    border-radius: 1vh;
+    padding: 0.6vh 2vh;
+    font-size: 16px;
+    font-weight: bold;
+}
+.searchMapel::placeholder {
+    font-weight: bold;
+    /* padding-left: 2vh; */
+}
+
+li > a:hover {
+    color: white;
+    transition: all 0.4s ease-in-out;
+}
+
+/* main */
+/* RekomendasiPembelajaranAtas */
+.rekomendasi-pembelajaran-atas {
+    height: 28rem;
+    gap: 5rem;
+    display: flex;
+    padding: 0.6rem 10rem 0.6rem 10rem;
+    align-items: center;
+}
+.rekomendasi-pembelajaran-atas .deskripsi {
+    display: flex;
+    background-color: whitesmoke;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: justify;
+    border-radius: 1rem;
+    padding: 1rem;
+    gap: 1rem;
+    height: 22rem;
+    width: 34rem;
+    color: black;
+}
+.rekomendasi-pembelajaran-atas .gambar img {
+    width: 600px;
+    box-shadow: 1px 2px 5px 7px rgba(111,111,111,0.25);
+    -webkit-box-shadow: 1px 2px 5px 7px rgba(111,111,111,0.25);
+    -moz-box-shadow: 1px 2px 5px 7px rgba(111,111,111,0.25);
+}
+
+/* Rekomendasi Pembelajaran Bawah */
+.rekomendasi-pembelajaran-bawah {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+.rekomendasi-pembelajaran-bawah .judul {
+    text-align: center;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    font-size: 20x;
+    /* font-weight: bolder; */
+}
+.isi-rekomendasi {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    /* text-align: center; */
+    gap: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.isi-rekomendasi .rekomendasi {
+    /* text-align: justify; */
+    border-radius: 10px;
+    background-color: #2277AB;
+    height: auto;
+    padding: 1.25rem;
+}
+.rekomendasi .judul-rekomendasi {
+    margin-bottom: 1rem;
+}
+
+
+/* Ayo Mulai Belajar */
+.ayo-belajar{
+    display: grid;
+    grid-auto-flow: row;
+    padding-top: 1rem;
+    justify-content: center;
+    background-color: whitesmoke;
+    /* align-items: flex-start; */
+}
+.ayo-belajar-judul {
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+}
+.wrapper-list {
+    display: grid;
+    grid-auto-flow: column;
+    overflow-x: auto;
+    padding: 2rem;
+    gap: 3.75rem;
+}
+.list-pelajaran {
+    background-color: rgb(230, 230, 230);
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+}
+.gambar-list-pelajaran {
+    width: 18rem;
+    height: 14rem;
+    border-radius: 0.5rem;
+    box-shadow: 1px 2px 5px 7px rgba(111,111,111,0.25);
+    -webkit-box-shadow: 1px 2px 5px 7px rgba(111,111,111,0.25);
+    -moz-box-shadow: 1px 2px 5px 7px rgba(111,111,111,0.25);    
+}
+.mata-pelajaran {
+    padding: 0.3rem 0rem;
+}
+.deskripsi-mata-pelajaran {
+    text-align: justify;
+    padding: 0.7rem 0rem;
+}
+
+/* footer */
+footer {
+    background-color: rgba(30, 30, 30, 0.88);
+    color: #f8f8ff;
+    padding: 1rem 12rem;
+    display: flex;
+    justify-content:start ;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-direction: row;
+}
+.judul-footer {
+    padding: 0.5rem 0rem;
+}
+.macam-macam {
+    font-size: 12px;
+    line-height: 1.8;
+}
+@media only screen and (max-width: 900px) {
+    .rekomendasi-pembelajaran-atas {
+        flex-direction: column;
+        margin-bottom: 12rem;
+        padding: 1rem 1rem 1rem 1rem;
+    }
+
+    .rekomendasi-pembelajaran-atas .deskripsi,
+    .rekomendasi-pembelajaran-atas .gambar img {
+        /* margin-top: 1rem; */
+        position: relative;
+        width: 100%;
+        max-width: none;
+    }
+    .rekomendasi-pembelajaran-atas .gambar img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .wrapper-list {    
+        .wrapper-list {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .list-pelajaran {
+        max-width: 100%;
+    }
+
+    .gambar-list-pelajaran {
+        max-width: 100%;
+    }
+
+    .wrapper-card-lesson {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .card-lesson > img {
+        max-width: 100%;
+    }
+    }
+}
